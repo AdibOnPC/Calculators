@@ -1,0 +1,75 @@
+'''
+pip install colorama
+python -m pip install colorama
+'''
+
+
+from colorama import *
+init()
+
+print(Fore.RED + "Welcome To The Calculator!\n   Made By Ibnul Adib.")
+user_input_str =  input(Fore.GREEN + "\n\nType 'Start' To Start the  Calculator:")
+while user_input_str == 'Start':
+    print("Your Programme is Successfully Started!")
+    user_num1 = float(input(Fore.BLUE + "\nEnter your 1st number:"))
+    user_op = input(Fore.BLUE + "Enter you oporator '+','-','*','/':")
+    user_num2 = float(input(Fore.BLUE + "Enter your 2nd number:"))
+        
+        
+        
+    
+    
+    if user_op == '+':
+        result = user_num1 + user_num2
+        print(f"The Addition of {user_num1} & {user_num2} is:",result)
+        print(Fore.RED + "Thanks For using the Calculator")
+        break
+  
+  
+  
+    elif user_op == '-':
+        result = user_num1 - user_num2
+        print(f"The Substraction of {user_num1} & {user_num2} is:",result)
+        print(Fore.RED +"Thanks For using the Calculator")
+        break
+
+
+    elif user_op == '*':
+        result = user_num1 * user_num2
+        print(f"The Multipication of {user_num1} & {user_num2} is:",result)
+        print(Fore.RED +"Thanks For using the Calculator")
+        break
+    
+    
+    
+    elif user_op == '/':
+        result = user_num1 / user_num2
+        print(f"The Substraction of {user_num1} & {user_num2} is:",result)
+        print(Fore.RED +"Thanks For using the Calculator")
+        break
+    
+    
+    
+    else:
+        print(f"You have entered '{user_op}' as the oporator of the Calculator, Which is not Applicable for this Program!")
+        print(Fore.RED +"Thanks For using the Calculator")
+        break
+                
+                
+else:
+    print(Fore.RED + f"ERROR!!\nYou have type '{user_input_str}'. Which is not applicable for this Programme.\nSo the Programme is Closed!\n\nThanks For using the Calculator!")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
